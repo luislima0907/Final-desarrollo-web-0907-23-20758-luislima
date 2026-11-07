@@ -9,3 +9,5 @@
 4. Mantén el código simple, sin carpetas o arquitecturas innecesarias, sin comentarios descriptivos, tampoco quiero emojis ya que pues no se ven bien al final.
 
 5. Mantén todo el proyecto en español, no uses nombres de entidades ni textos visibles en inglés, y explica en los informes para qué sirve el archivo `database.sqlite` y por qué no se abre como un archivo de texto en VS Code ya que si se podria, pero habria que instalar una extension extra en visual code.
+
+6. Implementa ahora el frontend con React básico, manteniendo todo en español, sin diseños complejos ni carpetas innecesarias. Incluye inicio de sesión sesion que valide el usuario hecho por defecto, y revisa que se vean bien las salas, formulario de reserva, reservas existentes y regreso al inicio con el boton de cerrar sesion. Pon mensajes de error comprensibles y no un 500 asi nomas.

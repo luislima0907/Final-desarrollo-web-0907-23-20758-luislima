@@ -54,3 +54,11 @@ Probé el backend sin utilizar todavía la parte visual con react.
    - Resultado: respuesta `200`.
 
 Con esas pruebas confirmé que el backend funciona sin depender todavía del frontend.
+
+## e) Frontend
+
+Agregue una pagina sencilla con React ya que pues no es necesario hacer tanto. Permite iniciar sesión con un usuario por defecto creado, luego de iniciar sesion se pueden ver las salas que ya estan reservedas, sus horarios y el usuario que las reservo, y tambien permite llenar el formulario de reserva, tiene la validacion de que evita el solapamiento de fechas o que se reserve el mismo horario para una sala que ya esta reservada y consultar las reservas existentes.
+
+La parte visual usa la sesión mediante cookie del backend. Si el servidor responde `401`, se vuelve automáticamente al inicio de sesión.
+
+También se probe la compilación del frontend con `npm run build` y compilo correctamente, ya despues solo se corre el frontend con el npm run dev

@@ -1,0 +1,161 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #24313a;
+  background: #f1f3f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 5px;
+  background: #286c55;
+  color: white;
+  cursor: pointer;
+  padding: 10px 16px;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.contenedor,
+.contenedor-login {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 32px 20px;
+}
+
+.contenedor-login {
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+  max-width: 520px;
+}
+
+.tarjeta {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #00000012;
+  margin-bottom: 24px;
+  padding: 24px;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+h1 {
+  color: #1d5946;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: bold;
+}
+
+input,
+select {
+  border: 1px solid #bbc6c0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+form {
+  display: grid;
+  gap: 16px;
+}
+
+.formulario-reserva {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.formulario-reserva button {
+  align-self: end;
+}
+
+.encabezado {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.encabezado h1 {
+  margin-bottom: 6px;
+}
+
+.encabezado p {
+  margin: 0;
+}
+
+.boton-secundario {
+  background: #53625c;
+}
+
+.mensaje {
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+.error {
+  color: #a32626;
+}
+
+.correcto {
+  color: #1d694d;
+}
+
+.ayuda {
+  color: #66716d;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.tabla-contenedor {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: 1px solid #dde3df;
+  padding: 12px 8px;
+  text-align: left;
+}
+
+th {
+  color: #1d5946;
+}
+
+@media (max-width: 700px) {
+  .formulario-reserva {
+    grid-template-columns: 1fr;
+  }
+
+  .encabezado {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
